@@ -1,6 +1,6 @@
 # music get links 
 # دریافت لینک موزیک های جدید 
-print('             ----------------> wellcome to linksmusic <---------------\n\n             _______________________top 10 music______________________\n')
+print('             ----------------> wellcome to linksmusic <---------------')
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -16,7 +16,7 @@ try:
             if a.string is None:
                 continue
             urls = urls + 1
-            print('URL :', urls, '\n', "---------->", a['href'], '\n')
+            print('URL :', urls, '\n', "---------->", a['href'], '\n\n')
             # print('new url: ', a.get('href'),'\n')
         if urls > 9:
             break
